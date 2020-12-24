@@ -21,11 +21,11 @@ label,#toggle{display: none;}
 ul li {list-style-type: none; margin: 0px; padding: 0px;}
 li{display: inline-block;}
 label:hover{
-    background-color: #338a3e;
+    color: orange;
     transition: 0.5s;
 }
 a:hover{
-    background-color: #338a3e;
+    color: orange;
     transition: 0.5s;
 }
 a{
