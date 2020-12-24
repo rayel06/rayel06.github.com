@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nanum+Brush+Script&display=swap');
+*{padding: 0px; margin: 0px;}
+.container{
+    width: 100%;
+    background-color: #66bb6a
+    ;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Nanum Brush Script', cursive;
+    height: auto;
+    font-size: 3vh;
+    padding: 20px;
+}
+.fa-earlybirds{
+    color: orange;
+    font-size: 4vh;
+}
+label,#toggle{display: none;}
+ul li {list-style-type: none; margin: 0px; padding: 0px;}
+li{display: inline-block;}
+label:hover{
+    background-color: #338a3e;
+    transition: 0.5s;
+}
+a:hover{
+    background-color: #338a3e;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 767px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    label{
+        display: block;
+        position: absolute;
+        top:20px; right: 10px;}
+    .toggle{display: none;}
+    #toggle:checked  ~ .toggle{
+        display: block;
+        }
+    .nav>li{margin: 0px; padding: 0px; width: 100%; text-align: center;}
+    .sns>li{display: inline-block;}
+}
