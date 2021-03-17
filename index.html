@@ -5,49 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio for Developer Sunghyun">
     <meta name="author" content="Sunghyun">
-    <link rel="icon" type="img/png" href="img/favicon.png">
+    <link rel="icon" type="img/png" href="imgs/favicon.png">
     <title>Sunghyun's Portfolio</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/st]">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js" ></script>
 </head>
 <body>
        <!-- navbar -->
-    <nav id="navbar">
-        <div class="navbar__logo"></div>
-        <img src="img/favicon.png" alt="logo">
-        <a href="#">윤성현</a>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Skills</li>
-            <li class="navbar__menu__item">My work</li>
-            <li class="navbar__menu__item">Testimonials</li>
-            <li class="navbar__menu__item">Contact</li>
-        </ul>
-    </nav>
+  <nav id="navbar">
+    <div class="navbar__logo">
+      <i class="fas fa-book-open"></i>       
+      <a href="#">윤성현</a>
+    </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+         <!-- Toggle button -->
+    <button class="navbar__toggle-btn" >
+      <i class="fas fa-bars"></i>
+     </button>
+  </nav>
     <!-- Home -->
     <section id="home">
-        <img src="img/profile.jpeg" alt="profile photo" class="home__avatar">
+        <!-- <img src="imgs/profile.jpeg" alt="profile photo" class="home__avatar"> -->
         <h1 class="home__title">안녕하십니까? <br> 윤성현입니다.</h1>
         <h2 class="home__description">A Front End Engineer</h2>
         <button class="home__contact">Contact Me</button>
     </section>
     <!-- about -->
-    <section id="about">
-        <h1>About me</h1>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus sequi fugit error molestias quisquam accusamus a voluptate ullam non numquam accusantium ad quas recusandae laudantium commodi deleniti voluptates, illum sint!
-            Ratione, ipsa pariatur tenetur perferendis optio aliquam. Nesciunt laudantium officia aliquid temporibus accusantium veritatis placeat aspernatur sit inventore sapiente ducimus praesentium reiciendis esse similique vero, eligendi beatae illo possimus explicabo.
-            Molestiae soluta voluptatem est possimus veniam magnam cumque maiores accusamus at corrupti? Voluptates ratione ducimus iste reiciendis, error, quam recusandae nostrum accusantium sequi non vitae suscipit iure repellendus odit consequatur?
-        </p>
-        <div class="about__majors">
-            <div class="major">
-                <div class="major__icon"><i class="fab fa-html5"></i></div>
-                <div class="major__title">HTML5</div>
-                <div class="major__description"></div>
-            </div>
+    <section id="about" class="section section__container">
+    <h1>About me</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus
+      rem sequi? Nihil, est impedit dignissimos consequatur totam, odit
+      deserunt doloremque laudantium similique corrupti, iusto optio rerum in
+      deleniti officia.
+    </p>
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-html5"></i>
         </div>
+        <h2 class="major__title">Front-end</h2>
+        <div class="major__description">
+          HTML, CSS, JavaScript, TypeScript,
+          <br />React, Vue, Web APIs
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fas fa-mobile"></i>
+        </div>
+        <h2 class="major__title">Mobile</h2>
+        <p class="major__description">
+          Android, iOS, React Native, Flutter,
+          <br />Java, Swift, Kotlin
+        </p>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fas fa-server"></i>
+        </div>
+        <h2 class="major__title">Back-end</h2>
+        <p class="major__description">
+          Java, JavaScript, Go, NodeJS,
+          <br />Rest APIs, GraphGL
+        </p>
+      </div>
+    </div>
         <div class="about__jobs">
             <div class="job">
                 <img src="" alt="" class="job__logo">
@@ -55,7 +86,6 @@
                 <p class="job__period">2020.10.21~2021.4.1</p>
             </div>
         </div>
-
     </section>
      <!-- Skills -->
      <section id="skills" class="section">
