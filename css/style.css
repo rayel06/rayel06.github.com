@@ -107,7 +107,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-pink);
+  background-color: yellowgreen;
   padding: 8px;
   z-index: 1;
 }
@@ -125,7 +125,7 @@ p {
 .navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
-  color: var(--color-white);
+  color: black;
   cursor: pointer;
 }
 
@@ -135,7 +135,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-dark-pink);
+  background-color: lawngreen;
   border-radius: var(--size-border-radius);
 }
 
@@ -150,7 +150,7 @@ p {
 
 /* Home */
 #home {
-  background: url("../imgs/background.png") center/cover no-repeat;
+  background: black;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -203,8 +203,8 @@ p {
   line-height: 170px;
   font-size: 70px;
   margin: auto;
-  color: var(--color-blue);
-  border: 1px solid var(--color-blue);
+  color: yellowgreen;
+  border: 1px solid yellowgreen;
   border-radius: 50%;
   margin-bottom: 16px;
 }
@@ -214,7 +214,7 @@ p {
 }
 
 .major__icon:hover i {
-  color: var(--color-pink);
+  color: lawngreen;
   transform: rotate(-30deg) scale(1.1);
 }
 
@@ -447,7 +447,7 @@ p {
 
 /* Contact */
 #contact {
-  background-color: var(--color-pink);
+  background-color: yellowgreen;
 }
 
 .contact__title,
